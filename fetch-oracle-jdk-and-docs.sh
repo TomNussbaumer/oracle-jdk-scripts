@@ -20,11 +20,13 @@
 [ ! -d "$1" ]          && echo >&2 "[ERROR] target directory doesn't exist" && exit 2
 [ -z "$(which wget)" ] && echo >&2 "[ERROR] requires wget"                  && exit 3
 
-## latest JDK8 version released on 14th July, 2015: JDK8u51
-BASE_URL_8=http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51
+## latest JDK8 version released on 18th August, 2015: JDK8u60
+
+BASE_URL_8=http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60
 
 ## previous versions
 
+# BASE_URL_8=http://download.oracle.com/otn-pub/java/jdk/8u51-b16/jdk-8u51
 # BASE_URL_8=http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45
 # BASE_URL_8=http://download.oracle.com/otn-pub/java/jdk/8u40-b25/jdk-8u40
 # BASE_URL_8=http://download.oracle.com/otn-pub/java/jdk/8u31-b13/jdk-8u31
